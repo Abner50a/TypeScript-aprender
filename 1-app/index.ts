@@ -24,10 +24,16 @@ axios.get(url).then(response => {
   const title = todo.title;
 
 
+  logTodo(id,title);
 
 
+
+
+})
+
+const logTodo = (id: number,title:string) => {
   console.log(`Todo  id : ${id} 
     titulo : ${title}
-    usuario : ${userid}
+
   `);
-})
+}
