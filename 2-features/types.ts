@@ -15,3 +15,6 @@ const red = new Color();
 
 
 console.log(today)
+
+//Type Annotations : Son tipos que agregmos lo desarrolladores de manera manual
+//Type inference: TypeScript los agrega automaticamente y eso se encarga de type
