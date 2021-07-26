@@ -64,3 +64,15 @@ for(let i = 0; i < words.length; i++) {
     foundWord = true;
   }
 }
+
+
+// 3) V aria puede ser inferedido correctamente = pero esto no se debe de hacer
+let numbers = [-10,-1,-12];
+let numberAcercaZero: boolean | number = false;
+
+for(let i = 0; i < numbers.length; i++) {
+  if(numbers[i] > 0){
+    numberAcercaZero = numbers[i];
+  }
+}
+
