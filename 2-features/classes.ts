@@ -50,21 +50,36 @@ class Vehicle {
   //   console.log('CHu chu');
   // }
 
-  public clason(): void {
+  constructor(public color: string){
+
+  }
+
+
+  protected clason(): void {
     console.log('pi pi pi');
   }
 }
 
+// const tsuru = new Vehicle('azul');
+// console.log(tsuru.color);
+
 class Car extends Vehicle {
+
+  constructor(public llantas: number, color: string) {
+    super(color);
+  }
+
   private manejar(): void {
     console.log('pum');
   }
 
-  empezarAmanejar() : void {
+  empezarAmanejar(): void {
     this.manejar();
+    this.clason();
+    
   }
 }
 
-const car = new Car();
-car.clason();
+const car = new Car(10,'rosado');
+
 car.empezarAmanejar();
